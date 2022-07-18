@@ -14,13 +14,11 @@
 </head>
 
 <body>
-  <!--  BEGIN NAVBAR  -->
   @include('layouts._header')
-  <!--  END NAVBAR  -->
 
-  <!--  BEGIN CONTENT AREA  -->
   @yield('content')
-  <!--  END CONTENT AREA  -->
+
+  @include('layouts._footer')
 </body>
 
 </html>

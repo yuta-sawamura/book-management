@@ -22,3 +22,9 @@ Route::prefix('book')->group(function () {
         return view('book.create');
     });
 });
+
+Route::prefix('user')->group(function () {
+    Route::get('/', function () {
+        return view('user.index');
+    });
+});

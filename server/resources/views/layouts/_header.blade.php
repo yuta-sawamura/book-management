@@ -10,7 +10,7 @@
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a href="/" class="mr-5 hover:text-gray-900">図書</a>
-      <a href="/" class="mr-5 hover:text-gray-900">ユーザ</a>
+      <a href="{{ url('user') }}" class="mr-5 hover:text-gray-900">ユーザ</a>
       <a href="/" class="mr-5 hover:text-gray-900">貸出</a>
     </nav>
   </div>

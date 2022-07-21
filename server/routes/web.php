@@ -27,4 +27,7 @@ Route::prefix('user')->group(function () {
     Route::get('/', function () {
         return view('user.index');
     });
+    Route::get('create', function () {
+        return view('user.create');
+    });
 });

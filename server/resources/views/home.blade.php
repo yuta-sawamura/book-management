@@ -6,21 +6,21 @@
       <h2 class="text-2xl leading-tight">
         図書一覧
       </h2>
-      <div class="text-end">
-        <form
-          class="flex flex-col md:flex-row w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
-          <div class=" relative ">
-            <input type="text" id="&quot;form-subscribe-Filter"
-              class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
-              placeholder="書籍" />
-          </div>
-          <button
-            class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-red-500 rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-red-200"
-            type="submit">
-            検索
-          </button>
-        </form>
-      </div>
+      <form
+        class="flex flex-col md:flex-row w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+        <div class=" relative ">
+          <input type="text" id="&quot;form-subscribe-Filter"
+            class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
+            placeholder="書籍" />
+        </div>
+        <button
+          class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-red-500 rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-red-200"
+          type="submit">
+          検索
+        </button>
+      </form>
+      <a href="{{ url('book/create') }}"
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">登録</a>
     </div>
     <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
       <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">

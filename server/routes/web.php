@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::prefix('book')->group(function () {
+    Route::get('create', function () {
+        return view('book.create');
+    });
 });
